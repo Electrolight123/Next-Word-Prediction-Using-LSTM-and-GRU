@@ -1,67 +1,119 @@
-Next Word Prediction Using LSTM and GRU
-This repository implements next word prediction using two deep learning models - LSTM and GRU. The models are trained on Shakespeare's "Hamlet" and deployed as web applications using Streamlit.
+# Next Word Prediction Using LSTM and GRU
 
-📂 Project Structure
+This project implements next word prediction using two Recurrent Neural Network models - LSTM (Long Short-Term Memory) and GRU (Gated Recurrent Unit). The models are trained on the text of Shakespeare's "Hamlet" and deployed as interactive web applications using Streamlit.
+
+## 🔥 Features
+
+* Implementation of LSTM and GRU models for next word prediction.
+* Data preprocessing including tokenization and padding.
+* Streamlit apps for real-time word prediction.
+* Early stopping mechanism to prevent overfitting.
+* Model saving and loading for deployment.
+
+## 🚀 Project Structure
+
+```
 Next_Word_Prediction_LSTM_GRU/
-│── README.md
-│── requirements.txt
-│── hamlet.txt
-│── tokenizer_lstm.pickle
-│── tokenizer_gru.pickle
-│── next_word_lstm.h5
-│── next_word_gru.h5
-│── experiments_LSTM.ipynb
-│── experiments_GRU.ipynb
-│── app_lstm.py
-│── app_gru.py
-📝 Files and Directories
-README.md: Project documentation.
+├── README.md
+├── requirements.txt
+├── hamlet.txt
+├── tokenizer_lstm.pickle
+├── tokenizer_gru.pickle
+├── next_word_lstm.h5
+├── next_word_gru.h5
+├── experiments_LSTM.ipynb
+├── experiments_GRU.ipynb
+├── app_lstm.py
+└── app_gru.py
+```
 
-requirements.txt: Python libraries required for the project.
+## 📦 Setup and Installation
 
-hamlet.txt: Dataset text file containing Shakespeare's 'Hamlet'.
+1. **Clone the repository:**
 
-tokenizer_lstm.pickle: Saved tokenizer for LSTM model.
+```bash
+git clone https://github.com/your-username/Next_Word_Prediction_LSTM_GRU.git
+cd Next_Word_Prediction_LSTM_GRU
+```
 
-tokenizer_gru.pickle: Saved tokenizer for GRU model.
+2. **Create a virtual environment:**
 
-next_word_lstm.h5: Trained LSTM model.
+```bash
+python -m venv env
+source env/bin/activate  # Unix/Mac
+.\env\Scripts\activate  # Windows
+```
 
-next_word_gru.h5: Trained GRU model.
+3. **Install dependencies:**
 
-experiments_LSTM.ipynb: Jupyter notebook for LSTM model training and evaluation.
+```bash
+pip install -r requirements.txt
+```
 
-experiments_GRU.ipynb: Jupyter notebook for GRU model training and evaluation.
+## 🛠️ How to Run
 
-app_lstm.py: Streamlit app for LSTM model.
+### 1. Run Jupyter Notebooks:
 
-app_gru.py: Streamlit app for GRU model.
+* LSTM Model Training:
 
-✅ Installation
-Clone the repository:
+```bash
+jupyter notebook experiments_LSTM.ipynb
+```
 
-$ git clone https://github.com/your-username/Next_Word_Prediction_LSTM_GRU.git
-$ cd Next_Word_Prediction_LSTM_GRU
-Create a virtual environment:
+* GRU Model Training:
 
-$ python -m venv env
-$ source env/bin/activate  # Unix/Mac
-$ .\env\Scripts\activate  # Windows
-Install dependencies:
+```bash
+jupyter notebook experiments_GRU.ipynb
+```
 
-$ pip install -r requirements.txt
-🚀 Running the Jupyter Notebooks
-To run the LSTM experiment:
+### 2. Run Streamlit Applications:
 
-$ jupyter notebook experiments_LSTM.ipynb
-To run the GRU experiment:
+* LSTM Application:
 
-$ jupyter notebook experiments_GRU.ipynb
-🌐 Running the Streamlit Applications
-Run the LSTM application:
+```bash
+streamlit run app_lstm.py
+```
 
-$ streamlit run app_lstm.py
-Run the GRU application:
+* GRU Application:
 
-$ streamlit run app_gru.py
-📊 Project Description
+```bash
+streamlit run app_gru.py
+```
+
+## 🧐 Project Workflow
+
+1. **Data Collection:**
+
+   * Extracts text data from "Hamlet" using NLTK's Gutenberg corpus.
+
+2. **Data Preprocessing:**
+
+   * Text tokenization and sequence generation.
+   * Padding sequences to ensure uniform input length.
+
+3. **Model Training:**
+
+   * Two models (LSTM and GRU) with embedding, recurrent, and dense layers.
+   * Early stopping based on validation loss.
+
+4. **Model Evaluation:**
+
+   * Predict the next word given a sequence of input words.
+
+5. **Deployment:**
+
+   * Interactive user interface using Streamlit.
+
+## ✅ Requirements
+
+* Python 3.8+
+* TensorFlow
+* NLTK
+* Streamlit
+* NumPy
+* Pandas
+* scikit-learn
+
+## 📧 Contact
+
+For further inquiries or suggestions, feel free to reach out via email at \[[Abhishekbala089@gmail.com](mailto:Abhishekbala089@gmail.com)].
