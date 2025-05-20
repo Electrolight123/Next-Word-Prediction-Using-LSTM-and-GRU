@@ -13,7 +13,7 @@ This project implements next word prediction using two Recurrent Neural Network 
 ## 🚀 Project Structure
 
 ```
-Next_Word_Prediction_LSTM_GRU/
+Next-Word-Prediction-Using-LSTM-and-GRU/
 ├── README.md
 ├── requirements.txt
 ├── hamlet.txt
@@ -32,7 +32,7 @@ Next_Word_Prediction_LSTM_GRU/
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/your-username/Next_Word_Prediction_LSTM_GRU.git
+git clone https://github.com/your-username/Next-Word-Prediction-Using-LSTM-and-GRU.git
 cd Next_Word_Prediction_LSTM_GRU
 ```
 
